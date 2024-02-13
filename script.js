@@ -62,7 +62,7 @@ $(document).ready(function() {
   
     // Event listener for the "No" button
     $('.no-btn').click(function() {
-      if (noClickCount < 20) {
+      if (noClickCount < 5) {
         // Choose a random text from the array
         var randomIndex = Math.floor(Math.random() * randomTexts.length);
         var randomText = randomTexts[randomIndex];
