@@ -21,16 +21,20 @@ $(document).ready(function() {
       envelope.addClass("open").removeClass("close");
       // Show the response buttons
       $('.response-buttons').show();
-      // Hide the "Open" and "Close" buttons
-      $('.reset button').hide();
+      // Show the "Close" button
+      $('#reset').show();
+      // Hide the "Open" button
+      $('#open').hide();
     }
   
     function close() {
       envelope.addClass("close").removeClass("open");
       // Hide the response buttons
       $('.response-buttons').hide();
-      // Show the "Open" and "Close" buttons
-      $('.reset button').show();
+      // Show the "Open" button
+      $('#open').show();
+      // Hide the "Close" button
+      $('#reset').hide();
     }
   
     // Event listener for the "Yes" button
@@ -91,11 +95,3 @@ $(document).ready(function() {
       }
     });
   });
-
-  var audio = document.createElement("AUDIO")
-document.body.appendChild(audio);
-audio.src = "RiverFlowsInYou.mp3"
-
-document.body.addEventListener("mousemove", function () {
-    audio.play()
-})
