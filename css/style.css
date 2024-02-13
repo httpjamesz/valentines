@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.envelope {
+    position: relative;
+    width: 400px; /* Increase width for a larger envelope */
+    height: 300px; /* Increase height for a larger envelope */
+    background-color: #f5f5f5;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.envelope-top {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-left: 200px solid transparent; /* Adjust border-left size */
+    border-right: 200px solid transparent; /* Adjust border-right size */
+    border-bottom: 20px solid #ccc;
+}
+
+.envelope-body {
+    padding: 30px; /* Adjust padding for content */
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+.greetings {
+    font-size: 2.5rem; /* Increase font size */
+    font-weight: 900;
+    color: #333;
+}
+
+.description {
+    font-size: 1.5rem; /* Increase font size */
+    color: #333;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.yes-btn, .no-btn {
+    background-color: #111;
+    color: #fff;
+    padding: 15px 30px; /* Increase padding for larger buttons */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.yes-btn:hover, .no-btn:hover {
+    background-color: #333;
+}
